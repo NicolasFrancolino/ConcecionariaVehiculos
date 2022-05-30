@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcecionariaVehiculos", "ConcecionariaVehiculos\ConcecionariaVehiculos.csproj", "{4C75B842-D429-4B82-A184-6B7B0DF24DEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C75B842-D429-4B82-A184-6B7B0DF24DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C75B842-D429-4B82-A184-6B7B0DF24DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C75B842-D429-4B82-A184-6B7B0DF24DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C75B842-D429-4B82-A184-6B7B0DF24DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6B9D22A-2D18-4E61-881F-F45E5D60BE8B}
+	EndGlobalSection
+EndGlobal
