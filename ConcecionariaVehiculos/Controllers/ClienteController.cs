@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ConcecionariaVehiculos.Controllers
 {
+    [Tags("CLIENTES")]
     [Route("api/[controller]")]
     [ApiController]
     public class ClienteController : ControllerBase
@@ -15,6 +16,9 @@ namespace ConcecionariaVehiculos.Controllers
         {
             _context = context;
         }
+        /// <summary>
+        /// Todos los Clientes
+        /// </summary>
 
         [HttpGet]
         public ActionResult<IEnumerable<Cliente>> Get()
@@ -22,7 +26,11 @@ namespace ConcecionariaVehiculos.Controllers
             var entidad = _context.ClienteRepo.GetAll();
             return Ok(entidad);
         }
-
+        /// <summary>
+        /// Crear Nuevo Cliente
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Post([FromBody] Cliente cliente)
         {
@@ -31,7 +39,12 @@ namespace ConcecionariaVehiculos.Controllers
             return Ok();
         }
 
-
+        /// <summary>
+        /// Editar Cliente
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public ActionResult Put([FromBody] Cliente cliente, int id)
         {
@@ -46,7 +59,11 @@ namespace ConcecionariaVehiculos.Controllers
                 return BadRequest();
             }
         }
-
+        /// <summary>
+        /// Eliminar Clientes
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
