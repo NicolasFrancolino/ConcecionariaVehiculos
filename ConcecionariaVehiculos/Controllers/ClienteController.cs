@@ -19,6 +19,9 @@ namespace ConcecionariaVehiculos.Controllers
         /// <summary>
         /// Todos los Clientes
         /// </summary>
+        /// <response code="200">Se creo correctamente</response>
+        /// <response code="404">Cliente no encontrado</response>
+
 
         [HttpGet]
         public ActionResult<IEnumerable<Cliente>> Get()
@@ -30,7 +33,9 @@ namespace ConcecionariaVehiculos.Controllers
         /// Crear Nuevo Cliente
         /// </summary>
         /// <param name="cliente"></param>
-        /// <returns></returns>
+        /// <response code="200">Se creo correctamente</response>
+        /// <response code="404">Cliente no encontrado</response>
+
         [HttpPost]
         public ActionResult Post([FromBody] Cliente cliente)
         {
@@ -44,7 +49,9 @@ namespace ConcecionariaVehiculos.Controllers
         /// </summary>
         /// <param name="cliente"></param>
         /// <param name="id"></param>
-        /// <returns></returns>
+        /// <response code="200">Se creo correctamente</response>
+        /// <response code="404">Cliente no encontrado</response>
+
         [HttpPut("{id}")]
         public ActionResult Put([FromBody] Cliente cliente, int id)
         {
@@ -63,7 +70,9 @@ namespace ConcecionariaVehiculos.Controllers
         /// Eliminar Clientes
         /// </summary>
         /// <param name="id"></param>
-        /// <returns></returns>
+        /// <response code="200">Se creo correctamente</response>
+        /// <response code="404">Cliente no encontrado</response>
+
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
